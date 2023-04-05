@@ -1,0 +1,123 @@
+html,
+body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.name {
+    text-align: center;
+    font-size: 20px;
+    padding: 33px 0;
+}
+
+.image {
+    background: url(subhas-chandra-bose.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px 5px gray;
+    width: 90vw;
+    height: 90vh;
+    margin: 0px auto;
+}
+
+.biodata h2 {
+    padding: 20px 80px;
+}
+
+.biodata ul li {
+    list-style: none;
+    margin: 15px 80px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.4rem;
+
+}
+
+.biodata ul li i.bx {
+    color: cornflowerblue;
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.biodata ul li:hover {
+    box-shadow: 0 0 5px 2px gray;
+    transition: 0.8 ease;
+}
+
+.footer {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 20px 0 0 80px;
+    padding-top: 5px;
+}
+
+.footer i.bx {
+    float: right;
+    padding: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: cornflowerblue;
+}
+
+
+
+@media (width>=430px) and (width <= 1050px) {
+    .name {
+        font-size: 18px;
+        padding: 25px 0;
+    }
+
+    .image {
+        height: 50vh;
+    }
+
+    .biodata ul li {
+        margin: 10px 8px;
+        padding: 8px;
+        line-height: 1.1rem;
+        font-size: 16px;
+    }
+}
+
+@media screen and (width<=430px) {
+    .name {
+        font-size: 12px;
+    }
+    .image {
+        height: 30vh;
+    }
+
+    .biodata h2 {
+        font-size: 16px;
+        padding: 20px 0 0 15px;
+    }
+    .biodata ul li {
+        margin: 8px 5px;
+        padding: 8px;
+        line-height: 1.1rem;
+        font-size: 14px;
+    }
+
+    .biodata ul li i.bx {
+        font-size: 20px;
+    }
+
+    .footer i.bx {
+        font-size: 25px;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top:20px;
+        margin-bottom: 10px;
+    }
+}
